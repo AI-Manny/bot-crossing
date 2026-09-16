@@ -9,6 +9,12 @@ data/*.tmp
 # Per-machine Claude Code permissions — personal paths live in here.
 .claude/settings.local.json
 
+# Local agent-plugin state (claude-flow / ruflo). Only these files: the rest of .claude —
+# launch.json and the skills — is project content and stays tracked.
+.claude-flow/
+.claude/proven-config.json
+.claude/.proven-config-version
+
 # Raw asset packs. The built glbs in public/assets are checked in instead — see the README
 # under "Where the art comes from" for how to re-fetch these if you need to rebuild.
 assets-src
